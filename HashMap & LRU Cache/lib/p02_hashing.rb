@@ -35,7 +35,7 @@ class Array
   def hash
     num = 0
     self.each_with_index do |i, j|
-      num += i ^ j.hash
+      num += i.hash ^ j
     end
     num
   end
