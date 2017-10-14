@@ -3,6 +3,7 @@ require_relative 'p04_linked_list'
 
 class HashMap
   attr_reader :count
+  attr_accessor :store
   include Enumerable
 
   def initialize(num_buckets = 8)
